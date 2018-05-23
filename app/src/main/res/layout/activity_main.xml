@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="load"
+                android:text="Home"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="load"
+                android:text="Courses"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:onClick="load"
+                android:id="@+id/materials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materials"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="load"
+                android:text="Project"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/fac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="load"
+                android:text="Faculty"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/loca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="laod"
+                android:text="Location"
+                android:textColor="#000000"
+                app:backgroundTint="#3cff00" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:id="@+id/frag1"
+        android:name="com.example.user.fragmenttext_kt.HomeFrag">
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="©somupanda2018"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
